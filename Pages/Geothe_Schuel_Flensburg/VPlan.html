@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/GeotheLogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/GeotheLogo.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <title>Vertretungsplan der Lehrer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #ffffff;
+            font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            color: #ffffff;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0px;
+            padding: 20px;
+        }
+        button{
+            border: none;
+            background-color: #393939;
+            color: #ffffff;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0px;
+            padding: 20px;
+            border-radius: 20px;
+            width: 100px;
+            text-align: center;
+        }
+        button:hover{
+            background-color: #bcbcbc;
+            color: #393939;
+        }
+    </style>
+</head>
+<body>
+    <nav><button id="1" onclick="_1()"></button><button id="2" onclick="_2()"></button><button id="3" onclick="_3()"></button><button id="4" onclick="_4()"></button><button id="5" onclick="_5()"></button></nav>
+    <iframe src="https://www.goethe.flensburg.de/files/vertretung/Leh_Dateien/Dateien/subst_001.htm" sandbox="" style=" border:none; overflow:hidden; margin-left:6%" scrolling="no" height="2600" width="90%"> </iframe>
+</body>
+<script>
+    let date = new Date();
+let dayOfWeek = date.getDay();
+
+const _day_1 = ["Di", "Mi", "Do", "Fr", "Mo"]
+const _day_2 = ["Mi", "Do", "Fr", "Mo", "Di"]
+const _day_3 = ["Do", "Fr", "Mo", "Di", "Mi"]
+const _day_4 = ["Fr", "Mo", "Di", "Mi", "Do"]
+const _day_5 = ["Mo", "Di", "Mi", "Do", "Fr"]
+
+const day_1 = document.getElementById("1");
+const day_2 = document.getElementById("2");
+const day_3 = document.getElementById("3");
+const day_4 = document.getElementById("4");
+const day_5 = document.getElementById("5");
+
+day_1.innerHTML = _day_1[0];
+
+if (dayOfWeek == 1) {
+    console.log("day 1");
+    day_1.innerHTML = _day_1[0];
+    day_2.innerHTML = _day_1[1];
+    day_3.innerHTML = _day_1[2];
+    day_4.innerHTML = _day_1[3];
+    day_5.innerHTML = _day_1[4];
+}
+if (dayOfWeek == 2) {
+    console.log("day 2");
+    day_1.innerHTML = _day_2[0];
+    day_2.innerHTML = _day_2[1];
+    day_3.innerHTML = _day_2[2];
+    day_4.innerHTML = _day_2[3];
+    day_5.innerHTML = _day_2[4];
+}
+if (dayOfWeek == 3) {
+    console.log("day 3");
+    day_1.innerHTML = _day_3[0];
+    day_2.innerHTML = _day_3[1];
+    day_3.innerHTML = _day_3[2];
+    day_4.innerHTML = _day_3[3];
+    day_5.innerHTML = _day_3[4];
+}
+if (dayOfWeek == 4) {
+    console.log("day 4");
+    day_1.innerHTML = _day_4[0];
+    day_2.innerHTML = _day_4[1];
+    day_3.innerHTML = _day_4[2];
+    day_4.innerHTML = _day_4[3];
+    day_5.innerHTML = _day_4[4];
+}
+if (dayOfWeek == 5) {
+    console.log("day 5");
+    day_1.innerHTML = _day_5[0];
+    day_2.innerHTML = _day_5[1];
+    day_3.innerHTML = _day_5[2];
+    day_4.innerHTML = _day_5[3];
+    day_5.innerHTML = _day_5[4];
+}
+
+function _1(){
+    document.getElementsByTagName("iframe")[0].src="https://www.goethe.flensburg.de/files/vertretung/Leh_Dateien/Dateien/subst_001.htm";
+}
+function _2(){
+    document.getElementsByTagName("iframe")[0].src="https://www.goethe.flensburg.de/files/vertretung/Leh_Dateien/Dateien/subst_002.htm";
+}
+function _3(){
+    document.getElementsByTagName("iframe")[0].src="https://www.goethe.flensburg.de/files/vertretung/Leh_Dateien/Dateien/subst_003.htm";
+}
+function _4(){
+    document.getElementsByTagName("iframe")[0].src="https://www.goethe.flensburg.de/files/vertretung/Leh_Dateien/Dateien/subst_004.htm";
+}
+function _5(){
+    document.getElementsByTagName("iframe")[0].src="https://www.goethe.flensburg.de/files/vertretung/Leh_Dateien/Dateien/subst_005.htm";
+}
+</script>
+</html>
