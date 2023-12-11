@@ -25,10 +25,12 @@ button{
     width: 45px;
     height: 45px;
     text-align: center;
+    font-size: 20px;
 }
 button:hover{
     background-color: #bcbcbc;
     color: #393939;
+    font-size: 15px;
 }
 iframe {
     margin: 20px;
