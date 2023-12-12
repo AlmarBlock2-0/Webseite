@@ -3,11 +3,11 @@ let dayOfWeek = date.getDay();
 let time = date.getHours();
 document.getElementsByTagName("iframe")[0].src="./subst_001.html";
 
-const text_day_1 = ["Mo", "Di", "Mi", "Do", "Fr"]
-const text_day_2 = ["Di", "Mi", "Do", "Fr", "Mo"]
-const text_day_3 = ["Mi", "Do", "Fr", "Mo", "Di"]
-const text_day_4 = ["Do", "Fr", "Mo", "Di", "Mi"]
-const text_day_5 = ["Fr", "Mo", "Di", "Mi", "Do"]
+const text_day_1 = ["<span>Mo</span>", "<span>Di</span>", "<span>Mi</span>", "<span>Do</span>", "<span>Fr</span>"]
+const text_day_2 = ["<span>Di</span>", "<span>Mi</span>", "<span>Do</span>", "<span>Fr</span>", "<span>Mo</span>"]
+const text_day_3 = ["<span>Mi</span>", "<span>Do</span>", "<span>Fr</span>", "<span>Mo</span>", "<span>Di</span>"]
+const text_day_4 = ["<span>Do</span>", "<span>Fr</span>", "<span>Mo</span>", "<span>Di</span>", "<span>Mi</span>"]
+const text_day_5 = ["<span>Fr</span>", "<span>Mo</span>", "<span>Di</span>", "<span>Mi</span>", "<span>Do</span>"]
 
 const day_1 = document.getElementById("day1");
 const day_2 = document.getElementById("day2");
@@ -21,38 +21,38 @@ day_1.style.color = "black";
 
 
 window.onload = function() {
-    if (dayOfWeek == 1 && time <= 15) {
+    if (dayOfWeek == 1 && time <= 14) {
         _day1();
     }
-    else if (dayOfWeek == 1 && time >= 15) {
+    else if (dayOfWeek == 1 && time >= 14) {
         _day2();
     }
 
-    if (dayOfWeek == 2 && time <= 15) {
+    if (dayOfWeek == 2 && time <= 14) {
         _day2();
     }
-    else if (dayOfWeek == 2 && time >= 15){
+    else if (dayOfWeek == 2 && time >= 14){
         _day3();
     }
 
-    if (dayOfWeek == 3 && time <= 15) {
+    if (dayOfWeek == 3 && time <= 14) {
         _day3();
     }
-    else if (dayOfWeek == 3 && time >= 15){
+    else if (dayOfWeek == 3 && time >= 14){
         _day4();
     }
 
-    if (dayOfWeek == 4 && time <= 15) {
+    if (dayOfWeek == 4 && time <= 14) {
         _day4();
     }
-    else if (dayOfWeek == 4 && time >= 15){
+    else if (dayOfWeek == 4 && time >= 14){
         _day5();
     }
 
-    if (dayOfWeek == 5 && time <= 15) {
+    if (dayOfWeek == 5 && time <= 14) {
         _day5();
     }
-    else if (dayOfWeek == 5 && time >= 15){
+    else if (dayOfWeek == 5 && time >= 14){
         _day1();
     }
 
