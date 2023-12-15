@@ -1,0 +1,93 @@
+body{
+    background: rgb(174, 174, 174);
+    color: rgb(125, 125, 125);
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    text-decoration: none;
+    font-size: 24px;
+    z-Index: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 98vw;
+}
+body table{
+    width: calc(100%-40px);
+    background-color: #1f1f1f;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table {
+    background-color: unset;
+    border-collapse: collapse;
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+tr td div span{
+    width: 100%;
+    font-size: 24px;
+    white-space: white-space;
+}
+tr td div{
+    width: 98%;
+    margin: 6px;
+    font-size: 24px;
+    white-space: white-space;
+}
+.even{
+    background-color: #3f3f3f;
+}
+.odd{
+    background-color: #2e2e2e;
+}
+.white td{
+    background-color: white !important;
+}
+.date{
+    background-color: #2e2e2e;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100%-40px);
+}
+button{
+    font-style: bold;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #393939;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+button:hover{
+    font-style: bold;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #bcbcbc;
+    color: #393939;
+}
+input{
+    font-style: bold;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #393939;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin-right: -70%;
+}
