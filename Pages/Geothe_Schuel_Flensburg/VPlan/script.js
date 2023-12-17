@@ -19,7 +19,7 @@ const frame = document.getElementById("frame");
 day_1.style.backgroundColor = "white";
 day_1.style.color = "black";
 
-
+console.log(dayOfWeek);
 window.onload = function() {
     if (dayOfWeek == 1 && time <= 14) {
         _day1();
@@ -56,7 +56,7 @@ window.onload = function() {
         _day1();
     }
 
-    if (dayOfWeek == 6 || dayOfWeek == 7){
+    if (dayOfWeek == 6 || dayOfWeek == 7|| dayOfWeek == 0){
         _day1();
     }
 }
