@@ -3,36 +3,40 @@ body{
     color: rgb(125, 125, 125);
     font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
     text-decoration: none;
-    font-size: 24px;
     z-Index: 0px;
     margin: 0px;
     padding: 0px;
     width: 98vw;
+    height: auto;
 }
 body table{
     width: calc(100%-40px);
     background-color: #1f1f1f;
 }
 tbody {
+    padding: 20px;
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
+    width: calc(100vw - 40px);
 }
 table {
+    font-size: 20px;
+    border-radius: 10px;
     background-color: unset;
     border-collapse: collapse;
     margin: 20px;
-    width: calc(100% - 40px);
+    width: calc(100vw - 40px);
+    height: auto;
+    overflow: hidden;
 }
 tr td div span{
     width: 100%;
-    font-size: 24px;
     white-space: white-space;
 }
 tr td div{
     width: 98%;
     margin: 6px;
-    font-size: 24px;
     white-space: white-space;
 }
 .even{
@@ -51,10 +55,13 @@ nav{
     display: flex;
     justify-content: space-around;
     color: #ffffff;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
     width: calc(100%-40px);
+}
+load{
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
 }
 button{
     font-style: bold;
@@ -65,8 +72,8 @@ button{
     color: #ffffff;
     border-radius: 20px;
     border: none;
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 110px;
     text-align: center;
 }
 button:hover{
@@ -90,4 +97,28 @@ input{
     width: 100px;
     text-align: center;
     margin-right: -70%;
+}
+iframe {
+    width: 100vw;
+    height: 1200px;
+    border-radius: 0px;
+    border: none;
+    z-index: 0;
+}
+.date{
+    font-size: 24px;
+}
+b{
+    font-size: 20px;
+    font-weight: normal;
+}
+td{
+    padding: 10px;
+}
+tbody > tr:first-child {
+    height: 40px;
+}
+tbody > tr:first-child > th{
+    padding-left: 10px;
+    padding-right: 10px;
 }

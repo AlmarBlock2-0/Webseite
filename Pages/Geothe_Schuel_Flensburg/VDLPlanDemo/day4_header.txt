@@ -1,0 +1,3 @@
+
+<tr class="info_content"><th class="info" align="center" colspan="2">Nachrichten zum Tag</th></tr>
+<tr class="info_content"><td class="info" align="left">Abwesende Lehrer&nbsp;</td><td class="info" align="left">Jes, Kue, Vo</td></tr>

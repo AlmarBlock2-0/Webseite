@@ -1,0 +1,6 @@
+
+<tr class="info_content"><th class="info" align="center" colspan="2">Nachrichten zum Tag</th></tr>
+<tr class="info_content"><td class="info" align="left">Abwesende Lehrer&nbsp;</td><td class="info" align="left">Ad (5-6), Do, El (1-2), Esm (1-6), Fz (1-6), Jes, Ko, Lw (1-6), Lx (1-6), Laux (3-4), Sa, Sc (3-3), Vo (1-6)</td></tr>
+<tr class="info_content"><td class="info" align="left">Abwesende Klassen&nbsp;</td><td class="info" align="left">6b (1-6), 6c (1-6), 6d (1-6), Q2e (3-3), Q2g (3-3), Q2n (3-3), Q2s (3-3)</td></tr>
+<tr class="info_content"><td class="info" align="left">Blockierte R&#228;ume&nbsp;</td><td class="info" align="left">Mensa (3-3)</td></tr>
+<tr class="info_content"><td class='info' colspan="2"><br>19.00 Uhr <b>Weihnachtskonzert </b>in der Aula<br><br>Diese Woche hat das <b>Schulcaf&#233;  in Haus II geschlossen</b>.<br><br>Der Q2-Jhg. verkauft noch heute <b> in den Pausen Kuchen in Haus II</b>.<br><br><b>Q2:</b> 3. Std. <b>Jahrgangsversammlung </b>in der <b>Mensa</b><br><br>Klassen 6b, 6c und 6d auf Exkursion (1.-6. Std.)<br><br><b>Klassen 7a, 7b, 7d</b> in der 6. Std. in Halle 1 zum Flashmob (S&#246;)<br><br><br><br></td></tr>

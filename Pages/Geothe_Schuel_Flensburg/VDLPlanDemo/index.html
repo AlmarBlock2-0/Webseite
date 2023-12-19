@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "./style.css">
+    <link rel="icon" type="image/png" href="../../../images/GeotheLogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/GeotheLogo.png">
+    <link rel="manifest" href="../../../site.webmanifest">
+    <title>Vertretungsplan der Lehrer</title>
+    <style>
+        body{
+            background: rgb(174, 174, 174);
+            color: rgb(125, 125, 125);
+            font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+            text-decoration: none;
+            font-size: 24px;
+            z-Index: 0px;
+            margin: 0px;
+            padding: 0px;
+            width: 98vw;
+            height: auto;
+        }
+        iframe {
+            width: 250vw;
+            height: 3000px;
+            border: none;
+            position: absolute;
+            top: -900px;
+            left: -75vw;
+            scale: 0.4;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <button onclick="load(1)">Day1</button>
-        <button onclick="load(2)">Day2</button>
-        <button onclick="load(3)">Day3</button>
-        <button onclick="load(4)">Day4</button>
-        <button onclick="load(5)">Day5</button>
-    </nav>
-    <nav>
-        <input type="text" id="input" maxlength="3" minlength="2" placeholder="Klasse">
-        <button onclick="getValue()">Suchen</button> 
-    </nav>
-    <table id="content">
-        
-    </table>
+    <iframe src="./iframe.html"></iframe>
 </body>
-<script src="./day.js"></script>
-<script src="./days.js"></script>
-<script src="./format.js"></script>
 </html>

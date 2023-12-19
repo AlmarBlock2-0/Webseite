@@ -1,6 +1,7 @@
 function getValue() {
   if (document.getElementById('input').value != null) {
-      mark(document.getElementById('input').value);
+    _cleardate();
+    mark(document.getElementById('input').value);
   }
   else{
     _load()
@@ -12,11 +13,9 @@ function mark(str) {
   stufe = klasse[0];
   buchstabe = klasse[1];
   str2 = `${stufe}(.*?${buchstabe})`
-
-  
   
   var reg = new RegExp(str2);
-  var table = document.getElementsByTagName("tbody")[0]; 
+  var table = document.getElementById("content").firstElementChild;
   var cells = table.getElementsByTagName("td"); 
 
   for (var i = 0; i < cells.length; i++) { 
@@ -49,6 +48,13 @@ function mark(str) {
 } 
 
 setTimeout(function() {
-  var date = document.getElementsByTagName("tr")[1];
+  _cleardate();
+}, 1000);
+
+function _cleardate(){
+  table = document.getElementById("content");
+  var date = table.getElementsByTagName("tr")[1];
   date.setAttribute("class", "date");
-}, 2000);
+  var date = table.getElementsByTagName("td")[0];
+  date.setAttribute("class", "date");
+}
