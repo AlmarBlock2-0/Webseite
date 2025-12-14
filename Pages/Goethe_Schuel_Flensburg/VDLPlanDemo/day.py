@@ -2,7 +2,7 @@ import requests
 import re
 
 def _day(day):
-    source_url = 'https://www.goethe.flensburg.de/files/vertretung/Leh_Dateien/Dateien/subst_00'+str(day)+'.htm'
+    source_url = 'https://goethe-flensburg.de/wp-content/uploads/vertretung/Leh_Dateien/Dateien/subst_00'+str(day)+'.htm'
     response = requests.get(source_url)
     source_html = response.text
     source_html = re.sub(r'style="background-color: #FFFFFF"', '', source_html)
