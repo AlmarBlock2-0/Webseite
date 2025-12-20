@@ -34,27 +34,7 @@
   >
 </p>
 
-<script>
-  checkServiceStatus(
-    "https://uptime.oldenburgs.me",
-    "19",
-    "uk3_EArBZQQ0nSbhoE_O4D4yRTfj6-kBu7Rtfjb24emE"
-  );
-  async function checkServiceStatus(baseUrl, statusPageId, apiKey) {
-    const url = `${baseUrl}/api/status-page/${statusPageId}`;
+<hr>
 
-    const response = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${apiKey}`, // Optional, falls API-Key konfiguriert
-      },
-    });
-
-    const data = await response.json();
-    console.log(data); // Enthält 'monitors' Array mit status: 0 (up), 1 (down), etc.
-
-    // Beispiel: Ersten Monitor prüfen
-    if (data.monitors && data.monitors[0]?.status === 0) {
-      console.log("Service ist online");
-    }
-  }
-</script>
+<p>This might work, but it is very unlicky:</p>
+<a href="https://irrigationpump.oldenburgs.fyi/"> Continue to royal-pump.oldenburgs.fyi</a>
