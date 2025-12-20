@@ -1,33 +1,60 @@
 <h1>I am stupid</h1>
 <h2>and I know it!</h2>
-<p>If you can read this, I made a small error in the configuration, this can be easly fixed, but in order to do it is someone required to unpluging the powercable to the brown box and than pluging it back in (You can alternitivly just turn the powerbar off and back on again) Give it a couple of hourse after this procedure, becouse I have to do some thing on the backend, but after that it should work flowlessly for the rest of time. (I get a notification, once it has been power cycle.)</p>
-<br>
-<p>I do know where and what the error is (and how to fix it), I just can't correct it, because I dont have remote excess until the steps above have been completed.</p>
+<p>
+  If you can read this, I made a small error in the configuration, this can be
+  easly fixed, but in order to do it is someone required to unpluging the
+  powercable to the brown box and than pluging it back in (You can alternitivly
+  just turn the powerbar off and back on again) Give it a couple of hourse after
+  this procedure, becouse I have to do some thing on the backend, but after that
+  it should work flowlessly for the rest of time. (I get a notification, once it
+  has been power cycle.)
+</p>
+<br />
+<p>
+  I do know where and what the error is (and how to fix it), I just can't
+  correct it, because I dont have remote excess until the steps above have been
+  completed.
+</p>
 
 <h2>The error</h2>
-<p>Since the Schools Internet is using a untrustet certificat, I had to use a detour that works by connecting to a VPN, that I controll. That VPN has a rolling ip, meaning that the ip of that server is changing daily, the server in the School, that controlls the pump, is just not aware about that rolling Ip, so I have to tell it, to check for chnages once in a while.</p>
+<p>
+  Since the Schools Internet is using a untrustet certificat, I had to use a
+  detour that works by connecting to a VPN, that I controll. That VPN has a
+  rolling ip, meaning that the ip of that server is changing daily, the server
+  in the School, that controlls the pump, is just not aware about that rolling
+  Ip, so I have to tell it, to check for chnages once in a while.
+</p>
 
 <h2>Further Questions</h2>
 <p>If you have further question:</p>
-<p>Send an email: <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem">anoold88807@nbss.nbed.nb.ca</a></p>
+<p>
+  Send an email:
+  <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem"
+    >anoold88807@nbss.nbed.nb.ca</a
+  >
+</p>
 
-  <script>
-    async function checkAndRedirect() {
-      const targetUrl = 'https://irrigationpump.oldenburgs.fyi'; // Anpassen
+<script>
+  checkServiceStatus(
+    "https://uptime.oldenburgs.me",
+    "19",
+    "uk3_EArBZQQ0nSbhoE_O4D4yRTfj6-kBu7Rtfjb24emE"
+  );
+  async function checkServiceStatus(baseUrl, statusPageId, apiKey) {
+    const url = `${baseUrl}/api/status-page/${statusPageId}`;
 
-      try {
-        const response = await fetch(targetUrl, { method: 'GET' });
+    const response = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${apiKey}`, // Optional, falls API-Key konfiguriert
+      },
+    });
 
-        // ok == true für 2xx (200–299)
-        if (response.ok) {
-          window.location.href = targetUrl;
-        } else {
-          console.error('Ziel gibt keinen 2xx-Code zurück, Status:', response.status);
-        }
-      } catch (err) {
-        console.error('Fehler beim Abrufen:', err);
-      }
+    const data = await response.json();
+    console.log(data); // Enthält 'monitors' Array mit status: 0 (up), 1 (down), etc.
+
+    // Beispiel: Ersten Monitor prüfen
+    if (data.monitors && data.monitors[0]?.status === 0) {
+      console.log("Service ist online");
     }
-
-    window.addEventListener('load', checkAndRedirect);
-  </script>
+  }
+</script>
