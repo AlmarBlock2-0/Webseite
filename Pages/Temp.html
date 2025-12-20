@@ -10,3 +10,24 @@
 <h2>Further Questions</h2>
 <p>If you have further question:</p>
 <p>Send an email: <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem">anoold88807@nbss.nbed.nb.ca</a></p>
+
+  <script>
+    async function checkAndRedirect() {
+      const targetUrl = 'https://irrigationpump.oldenburgs.fyi'; // Anpassen
+
+      try {
+        const response = await fetch(targetUrl, { method: 'GET' });
+
+        // ok == true für 2xx (200–299)
+        if (response.ok) {
+          window.location.href = targetUrl;
+        } else {
+          console.error('Ziel gibt keinen 2xx-Code zurück, Status:', response.status);
+        }
+      } catch (err) {
+        console.error('Fehler beim Abrufen:', err);
+      }
+    }
+
+    window.addEventListener('load', checkAndRedirect);
+  </script>
