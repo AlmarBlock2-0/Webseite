@@ -1,5 +1,54 @@
-<h1>I am stupid</h1>
-<h2>and I know it!</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #333;
+      color: #fff;
+    }
+    h1, h2, h3 {
+      color: #fff;
+      margin: 0px;
+    }
+    a {
+      color: #66aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      margin: 0px;
+    }
+    #head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    #timer-container {
+      font-size: 2;
+      display: flex;
+      align-items: left;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<div id="head">
+  <div>
+    <h1>I am stupid</h1>
+    <h3>and I know it!</h3>
+  </div>
+  <img src="https://rhsroyals.nbed.ca/wp-content/uploads/sites/21/2022/07/Lions-Head-New-Red-150px.png" alt="Logo" height="100px">
+</div>
 <p>
   If you can read this, I made a small error in the configuration, this can be
   easly fixed, but in order to do it is someone required to unpluging the
@@ -14,7 +63,7 @@
   correct it, because I dont have remote excess until the steps above have been
   completed.
 </p>
-
+<br>
 <h2>The error</h2>
 <p>
   Since the Schools Internet is using a untrustet certificat, I had to use a
@@ -23,26 +72,28 @@
   in the School, that controlls the pump, is just not aware about that rolling
   Ip, so I have to tell it, to check for chnages once in a while.
 </p>
-
+<br>
 <h2>Further Questions</h2>
 <p>If you have further question:</p>
 <p>
   Send an email:
-  <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem"
-    >anoold88807@nbss.nbed.nb.ca</a
-  >
+  <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem">anoold88807@nbss.nbed.nb.ca</a>
 </p>
 
-
+<br>
 <h2>The waterlevel sould be fine for the next:</h2>
-<hr>
-<div id="timer"><p>00:00:00</p></div>
-<hr>
+<div id="timer-container">
+  <div id="timer"><p>00:00:00</p></div> 
+  <p>(28.12.2025)</p>
+</div>
 
+<hr>
+<br>
+<h2>A last hope</h2>
 <p>This might work, but it is very unlikely:</p>
 <a href="https://irrigationpump.oldenburgs.fyi/"> Continue to royal-pump.oldenburgs.fyi</a>
-<p>P.S. there is a chance that it will fix it self on Wensday, but I would put my hope on it.</p>
-
+<p>P.S. There is a small chance that it will fix itself on Wednesday, but I would put my hope on it.</p>
+  
 <script>
   const timerElement = document.getElementById("timer").querySelector("p");
   const endDate = new Date("2025-12-28T00:00:00");
@@ -66,3 +117,6 @@
 
   updateTimer();
   const interval = setInterval(updateTimer, 1000);
+</script>
+</body>
+</html>
