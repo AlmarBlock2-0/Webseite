@@ -11,9 +11,9 @@
         line-height: 1.6;
         background-color: #333;
         color: #fff;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
       }
       h1,
       h2,
@@ -30,6 +30,10 @@
       }
       p {
         margin: 0px;
+        text-align: justify;
+      }
+      TLDR {
+        font-weight: bold;
       }
       #head {
         display: flex;
@@ -38,11 +42,21 @@
         margin-bottom: 20px;
       }
       #timer-container {
+        font-weight: bold;
         font-size: 2;
         display: flex;
         align-items: left;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: 20px;
+      }
+      #TLDR-container {
+        width: 100%;
+        background-color: #555;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+      #TLDR-container > div {
+        padding: 4px;
       }
     </style>
   </head>
@@ -58,6 +72,14 @@
         height="100px"
       />
     </div>
+    <div id="TLDR-container">
+      <div>
+        <TLDR>
+          TL;DR: The pump isn't working until it gets restarted, because I
+          forgot to set one setting, while setting the whole system up.
+        </TLDR>
+      </div>
+    </div>
     <p>
       If you can read this, I made a small error in the configuration, this can
       be easly fixed, but in order to do it is someone required to unpluging the
@@ -67,6 +89,7 @@
       the backend, but after that it should work flowlessly for the rest of
       time. (I get a notification, once it has been power cycled.)
     </p>
+    <br />
     <p>
       I do know where and what the error is (and how to fix it), I just can't
       correct it, because I dont have remote excess until the steps above have
@@ -84,7 +107,7 @@
     </p>
     <br />
     <h2>Further Questions</h2>
-    <p>If you have further question:</p>
+    <p>If you have any further questions:</p>
     <p>
       Send an email:
       <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem"
@@ -93,19 +116,22 @@
     </p>
 
     <br />
-    <h2>The waterlevel sould be fine for the next:</h2>
+    <h2>DON'T PANIC</h2>
+    <p>The waterlevel sould be fine for the next rougthly:</p>
     <div id="timer-container">
       <div id="timer"><p>00:00:00</p></div>
-      <p>(28.12.2025)</p>
+      <space>&nbsp;</space>
+      <p style="font-style: italic">(28.12.2025 00:00 AM)</p>
     </div>
     <p>
       I might have turn of the automation after seeing that the pump ran for
-      15min. straight, so the Pump should'nt need to be turnd on for that amount
-      of time.
+      15min. straight, so the pump shouldn't need to be turned on for that
+      amount of time.
     </p>
+    <br />
     <hr />
     <br />
-    <h2>A last hope</h2>
+    <h2>One last hope</h2>
     <p>This might work, but it is very unlikely:</p>
     <a href="https://irrigationpump.oldenburgs.fyi/">
       Continue to royal-pump.oldenburgs.fyi</a
