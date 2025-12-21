@@ -1,122 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background-color: #333;
-      color: #fff;
-    }
-    h1, h2, h3 {
-      color: #fff;
-      margin: 0px;
-    }
-    a {
-      color: #66aaff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    p {
-      margin: 0px;
-    }
-    #head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    #timer-container {
-      font-size: 2;
-      display: flex;
-      align-items: left;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-<div id="head">
-  <div>
-    <h1>I am stupid</h1>
-    <h3>and I know it!</h3>
-  </div>
-  <img src="https://rhsroyals.nbed.ca/wp-content/uploads/sites/21/2022/07/Lions-Head-New-Red-150px.png" alt="Logo" height="100px">
-</div>
-<p>
-  If you can read this, I made a small error in the configuration, this can be
-  easly fixed, but in order to do it is someone required to unpluging the
-  powercable to the brown box and than pluging it back in (You can alternitivly
-  just turn the powerbar off and back on again) Give it a couple of hourse after
-  this procedure, becouse I have to do some thing on the backend, but after that
-  it should work flowlessly for the rest of time. (I get a notification, once it
-  has been power cycled.)
-</p>
-<p>
-  I do know where and what the error is (and how to fix it), I just can't
-  correct it, because I dont have remote excess until the steps above have been
-  completed.
-</p>
-<br>
-<h2>The error</h2>
-<p>
-  Since the Schools Internet is using a untrustet certificat, I had to use a
-  detour that works by connecting to a VPN, that I controll. That VPN has a
-  rolling ip, meaning that the ip of that server is changing daily, the server
-  in the School, that controlls the pump, is just not aware about that rolling
-  Ip, so I have to tell it, to check for chnages once in a while.
-</p>
-<br>
-<h2>Further Questions</h2>
-<p>If you have further question:</p>
-<p>
-  Send an email:
-  <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem">anoold88807@nbss.nbed.nb.ca</a>
-</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        line-height: 1.6;
+        background-color: #333;
+        color: #fff;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        margin: 0px;
+      }
+      a {
+        color: #66aaff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        margin: 0px;
+      }
+      #head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      #timer-container {
+        font-size: 2;
+        display: flex;
+        align-items: left;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head">
+      <div>
+        <h1>I am stupid</h1>
+        <h3>and I know it!</h3>
+      </div>
+      <img
+        src="https://rhsroyals.nbed.ca/wp-content/uploads/sites/21/2022/07/Lions-Head-New-Red-150px.png"
+        alt="Logo"
+        height="100px"
+      />
+    </div>
+    <p>
+      If you can read this, I made a small error in the configuration, this can
+      be easly fixed, but in order to do it is someone required to unpluging the
+      powercable to the brown box and than pluging it back in (You can
+      alternitivly just turn the powerbar off and back on again) Give it a
+      couple of hourse after this procedure, becouse I have to do some thing on
+      the backend, but after that it should work flowlessly for the rest of
+      time. (I get a notification, once it has been power cycled.)
+    </p>
+    <p>
+      I do know where and what the error is (and how to fix it), I just can't
+      correct it, because I dont have remote excess until the steps above have
+      been completed.
+    </p>
+    <br />
+    <h2>The error</h2>
+    <p>
+      Since the Schools Internet is using a untrustet certificat, I had to use a
+      detour that works by connecting to a VPN, that I controll. That VPN has a
+      rolling ip, meaning that the ip of that server is changing daily, the
+      server in the School, that controlls the pump, is just not aware about
+      that rolling Ip, so I have to tell it, to check for chnages once in a
+      while.
+    </p>
+    <br />
+    <h2>Further Questions</h2>
+    <p>If you have further question:</p>
+    <p>
+      Send an email:
+      <a href="mailto:anoold88807@nbss.nbed.nb.ca?subject=RHS-Irrigationsystem"
+        >anoold88807@nbss.nbed.nb.ca</a
+      >
+    </p>
 
-<br>
-<h2>The waterlevel sould be fine for the next:</h2>
-<div id="timer-container">
-  <div id="timer"><p>00:00:00</p></div> 
-  <p>(28.12.2025)</p>
-</div>
+    <br />
+    <h2>The waterlevel sould be fine for the next:</h2>
+    <div id="timer-container">
+      <div id="timer"><p>00:00:00</p></div>
+      <p>(28.12.2025)</p>
+    </div>
+    <p>
+      I might have turn of the automation after seeing that the pump ran for
+      15min. straight, so the Pump should'nt need to be turnd on for that amount
+      of time.
+    </p>
+    <hr />
+    <br />
+    <h2>A last hope</h2>
+    <p>This might work, but it is very unlikely:</p>
+    <a href="https://irrigationpump.oldenburgs.fyi/">
+      Continue to royal-pump.oldenburgs.fyi</a
+    >
+    <p>
+      P.S. There is a small chance that it will fix itself on Wednesday, but I
+      would put my hope on it.
+    </p>
 
-<hr>
-<br>
-<h2>A last hope</h2>
-<p>This might work, but it is very unlikely:</p>
-<a href="https://irrigationpump.oldenburgs.fyi/"> Continue to royal-pump.oldenburgs.fyi</a>
-<p>P.S. There is a small chance that it will fix itself on Wednesday, but I would put my hope on it.</p>
-  
-<script>
-  const timerElement = document.getElementById("timer").querySelector("p");
-  const endDate = new Date("2025-12-28T00:00:00");
-  
-  function updateTimer() {
-    const now = new Date();
-    const diff = endDate - now;
+    <script>
+      const timerElement = document.getElementById("timer").querySelector("p");
+      const endDate = new Date("2025-12-28T00:00:00");
 
-    if (diff <= 0) {
-      timerElement.textContent = "00:00:00";
-      clearInterval(interval);
-      return;
-    }
+      function updateTimer() {
+        const now = new Date();
+        const diff = endDate - now;
 
-    const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, "0");
-    const minutes = String(Math.floor((diff / (1000 * 60)) % 60)).padStart(2, "0");
-    const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, "0");
+        if (diff <= 0) {
+          timerElement.textContent = "00:00:00";
+          clearInterval(interval);
+          return;
+        }
 
-    timerElement.textContent = `${hours}:${minutes}:${seconds}`;
-  }
+        const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(
+          2,
+          "0"
+        );
+        const minutes = String(Math.floor((diff / (1000 * 60)) % 60)).padStart(
+          2,
+          "0"
+        );
+        const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, "0");
 
-  updateTimer();
-  const interval = setInterval(updateTimer, 1000);
-</script>
-</body>
+        timerElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }
+
+      updateTimer();
+      const interval = setInterval(updateTimer, 1000);
+    </script>
+  </body>
 </html>
